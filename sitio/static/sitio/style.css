@@ -162,3 +162,38 @@ footer div > p{
 }
 
 /* Fin Cards */
+
+/* Estilo para la sección "¿Por qué Pandas AI?" */
+.custom-bg {
+    background-color: darkturquoise; /* Color de fondo personalizado */
+    color: #212529; /* Color de texto */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para la imagen */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}

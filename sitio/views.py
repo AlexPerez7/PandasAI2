@@ -221,9 +221,8 @@ def item_carrito_delete(request, item_carrito_id):
     PAGINAS
 """
 def acerca_de(request):
-    return render(request, 'sitio/paginas/acerca_de.html',{
-        'categorias' : Categoria.objects.all(),
-    })
+    return render(request, 'sitio/paginas/acerca_de.html')
+
 
 def simple_checkout(request):
     return render(request, 'sitio/carrito/simple_checkout.html')

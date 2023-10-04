@@ -220,8 +220,8 @@ def item_carrito_delete(request, item_carrito_id):
 """
     PAGINAS
 """
-def acerca_de(request):
-    return render(request, 'sitio/paginas/acerca_de.html')
+def nosotros(request):
+    return render(request, 'sitio/paginas/nosotros.html')
 
 
 def simple_checkout(request):
@@ -251,3 +251,6 @@ def sucess(request):
     categorias = Categoria.objects.all(activo = True)
     context = {"productos":productos, "categorias":categorias}
     return render(request, 'sitio/carrito/sucess.html', context)
+
+def instructivo(request):
+    return render(request, 'sitio/Instructivo/instructivo.html')

@@ -15,8 +15,9 @@ urlpatterns = [
 
 
     # Paginas
-    path('acercaDe', views.acerca_de, name="acerca_de"),
+    path('nosotros', views.nosotros, name="nosotros"),
     path('simple_checkout', views.simple_checkout, name="simple_checkout"),
+    path('instructivo', views.instructivo, name="instructivo"),
     
     # PRODUCTOS
     path('', views.producto_index, name="producto_index"),

@@ -27,13 +27,13 @@
 <body>
 
     <!-- HEADER -->
-    <header class="" style="background-color: currentColor;">
+    <header class="" style="background-color: #F69156;">
         <div class="container d-flex py-2">
 
             <!-- Agregar la imagen como logo -->
         <img src="{% static 'logo/logo2.png' %}" alt="Logo de PandasAI" class="mr-2" style="height: 44px;">
             
-            <a class="m-0 p-0 nav-logo" href="/" style="color: azure;">
+            <a class="m-0 p-0 nav-logo" href="/" style="color: black;">
                 PandasAI
             </a>
     
@@ -71,25 +71,20 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="/">Inicio</a>
                     </li>
+                    {% if user.is_authenticated %}
                     <li class="nav-item active">
                         <a class="nav-link" href="#">LLM</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Instructivo</a>
+                        <a class="nav-link" href="{% url 'SITIO:instructivo' %}">Instructivo</a>
                     </li>
+                    {% endif %} 
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'SITIO:acerca_de' %}">Acerca de</a>
+                        <a class="nav-link" href="{% url 'SITIO:nosotros' %}">Nosotros</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="mailto:datamindscontact@gmail.com">Contacto</a>
                     </li>
-
-                    <!-- PARA ADMINS/MODERADORES -->
-                    {% if user.is_superuser %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'SITIO:producto_create' %}">Agregar producto</a>
-                        </li>
-                    {% endif %}
 
                 </ul>
             </div>
@@ -105,10 +100,10 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="p-3 border-top" style="background-color: currentColor">
+    <footer class="p-3 border-top" style="background-color: #F69156;">
         <div class="container">
-            <p class="p-0 m-0 mb-2 logo-empresa-footer" style="color: azure;">PandasAI | Derechos reservados &reg;</p>
-            <p class="p-0 m-0 mx-5" style="color: azure;">Desarrollado por Equipo DataMinds</p>
+            <p class="p-0 m-0 mb-2 logo-empresa-footer" style="color: black;">PandasAI | Derechos reservados &reg;</p>
+            <p class="p-0 m-0 mx-5" style="color: black;">Desarrollado por Equipo DataMinds</p>
             <!-- <p class="p-0 m-0"> </p> -->
         </div>
     </footer>

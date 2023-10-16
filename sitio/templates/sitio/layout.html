@@ -46,7 +46,7 @@
                 {% else %}
                 <a role="button" class="btn btn-primary mr-3" href="{% url 'login'%}?next={{request.path}}">
                     Ingresar
-                </a>  
+                </a>
                 <a role="button" class="btn btn-secondary mr-3" href="{% url 'SITIO:register' %}">
                     Registrarse
                 </a>
@@ -75,10 +75,10 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">LLM</a>
                     </li>
+                    {% endif %} 
                     <li class="nav-item active">
                         <a class="nav-link" href="{% url 'SITIO:instructivo' %}">Instructivo</a>
                     </li>
-                    {% endif %} 
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'SITIO:nosotros' %}">Nosotros</a>
                     </li>

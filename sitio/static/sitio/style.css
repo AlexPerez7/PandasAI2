@@ -165,7 +165,7 @@ footer div > p{
 
 /* Estilo para la sección "¿Por qué Pandas AI?" */
 .custom-bg {
-    background-color: darkturquoise; /* Color de fondo personalizado */
+    background-color: antiquewhite; /* Color de fondo personalizado */
     color: #212529; /* Color de texto */
     border-radius: 20px; /* Bordes redondeados */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -207,7 +207,7 @@ li {
     align-items: center;
     justify-content: center;
     height: 36vh; /* Esto centrará verticalmente en toda la ventana */
-    margin-top: 50px; /* Mueve el contenido hacia abajo */
+    /*margin-top: 50px; /* Mueve el contenido hacia abajo */
     margin-left: auto; /* Mueve el contenido hacia la derecha */
     margin-right: auto; /* Mueve el contenido hacia la derecha */
     max-width: 400px; /* Limita el ancho máximo del contenido si es necesario */
@@ -410,4 +410,3 @@ li {
     --pbd: .15s;
     --pex: -24px;
   }
-  
